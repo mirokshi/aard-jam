@@ -1,0 +1,175 @@
+[33mcommit 752b2f3b264c302ddd07654c95b8d0963a6d9c40[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 18:39:52 2023 +0100
+
+    Revert "Mesa comedor"
+    
+    This reverts commit c51ae0dc66ed19979e9ed856244ab4df6142d011.
+
+[33mcommit f642516c6faa86a0d2eec789eaaaed48e6a5c792[m
+Merge: 5af0553 f3300b8
+Author: nilPuigdemont <121803376+nilPuigdemont@users.noreply.github.com>
+Date:   Fri Feb 10 18:34:49 2023 +0100
+
+    Merge branch 'main' of https://github.com/mirokshi/aard-jam
+
+[33mcommit 5af05538aa0b7e7596e2998385c0e20207295179[m
+Author: nilPuigdemont <121803376+nilPuigdemont@users.noreply.github.com>
+Date:   Fri Feb 10 18:29:27 2023 +0100
+
+    Comedor
+    
+    Mesas
+
+[33mcommit f3300b89a2be92dc63c5e9cad4202da18cb435f5[m
+Merge: c51ae0d 92d7ff1
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 18:23:59 2023 +0100
+
+    Merge branch 'main' of https://github.com/mirokshi/aard-jam
+
+[33mcommit c51ae0dc66ed19979e9ed856244ab4df6142d011[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 18:23:12 2023 +0100
+
+    Mesa comedor
+
+[33mcommit 92d7ff163491af4d8a59eaccd796d0edcfaf7e78[m
+Merge: 985e102 af2323f
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 18:22:01 2023 +0100
+
+    Merge branch 'main' of https://github.com/mirokshi/aard-jam
+
+[33mcommit 985e1022f6cde12d0ee33e81bb53e365b5415c29[m
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 18:21:20 2023 +0100
+
+    habitacio tio machirulo
+
+[33mcommit af2323f6c21bee900a5684634d4c4326e199664c[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 18:15:42 2023 +0100
+
+    Mesa comedor
+
+[33mcommit e31732cf6b8f809cabe69b68d5ff362e4ad5b2c6[m
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 17:54:16 2023 +0100
+
+    estanterias
+
+[33mcommit d2f47818c56f8b4c59cdaf66bdcb9e6b4d4c9f40[m
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 17:39:06 2023 +0100
+
+    biblioteca
+
+[33mcommit 3f5df796881e9dfe801372b1e982eaadf79d8e2b[m
+Merge: 282060a 2e86883
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 17:01:31 2023 +0100
+
+    Merge branch 'main' of https://github.com/mirokshi/aard-jam
+
+[33mcommit 282060a353bebf89c7ab2ce87d8d93eda5f775e0[m
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 17:01:05 2023 +0100
+
+    plantas
+
+[33mcommit 2e86883c028ebe00e790ea50ff3d26ba639e0acd[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 16:55:55 2023 +0100
+
+    clock
+
+[33mcommit 9b629a0f6e998f893a858302354ced1c02d11b70[m
+Merge: d2681c5 5d6ae01
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 16:07:18 2023 +0100
+
+    Merge branch 'main' of https://github.com/mirokshi/aard-jam
+
+[33mcommit d2681c5c01ea427a78af59ad2a1cd8a3d010f7a2[m
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Fri Feb 10 16:07:10 2023 +0100
+
+    casa completa
+    
+    forma basica casa completa
+
+[33mcommit 5d6ae01b9dc6581fed39eb71d6fae10fb7bb857f[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 16:06:46 2023 +0100
+
+    Mouse Controller (ahora si)
+
+[33mcommit 75f3470979aa69b8631adf08a327371a05b8d259[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 15:50:12 2023 +0100
+
+    Merge
+
+[33mcommit 0f610af6d7a4d69e6f80a5d3d1a2565d61b56394[m
+Merge: be19dd8 10cad83
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 15:50:04 2023 +0100
+
+    Merge branch 'main' of https://github.com/mirokshi/aard-jam
+
+[33mcommit be19dd8ff42f912f992a09b6b01126e7c213ee0e[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Fri Feb 10 15:48:44 2023 +0100
+
+    Mouse controller
+
+[33mcommit 10cad831b71a633ae55e0c09462d8087b232fe59[m
+Author: Campalans <101204872+Campalans03@users.noreply.github.com>
+Date:   Fri Feb 10 12:49:19 2023 +0100
+
+    extension mansion
+    
+    he añadido la bibliioteca y el espacio para la cocina
+
+[33mcommit d8bc8d0b4d492e8ffad2f2b476faa4bfcb89ec3b[m
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Thu Feb 9 20:21:33 2023 +0100
+
+    Candelabro
+
+[33mcommit 76aca8b0e43ff1a1f39f9a9ff63ffe9425517201[m
+Author: Campalans03 <jancampalans@gmail.com>
+Date:   Thu Feb 9 19:54:17 2023 +0100
+
+    despacho
+
+[33mcommit f08a6cc20776af47f64a6736b2bbf70e919b03d7[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Thu Feb 9 18:46:58 2023 +0100
+
+    --
+
+[33mcommit 62eb8c8a7ec4376e9d4a09fbb4748fc2a99284b6[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Thu Feb 9 17:32:58 2023 +0100
+
+    Player movement
+
+[33mcommit f0d7733ff4a0afbf8c154d6b68fb9649bed71a22[m
+Author: Mirokshi <rojasdiazmirokshi@gmail.com>
+Date:   Thu Feb 9 16:48:06 2023 +0100
+
+    First commit
+
+[33mcommit e4fb06e0a744a6211bdc0582bfdacee9f52b3e35[m
+Author: Campalans <101204872+Campalans03@users.noreply.github.com>
+Date:   Thu Feb 9 09:55:14 2023 +0100
+
+    Create README.md
+
+[33mcommit f6d3067284d5c352e88edee5a4970a8387adb63c[m
+Author: Mirokshi <43352881+mirokshi@users.noreply.github.com>
+Date:   Thu Feb 9 09:50:10 2023 +0100
+
+    Initial commit
