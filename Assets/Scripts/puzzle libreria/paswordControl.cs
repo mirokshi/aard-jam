@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class paswordControl : MonoBehaviour
 {
+    public static Action onOpenDoor;
     private int num = 0;
     private int[] nums = new int [4];
     private void OnEnable()
@@ -26,6 +27,7 @@ public class paswordControl : MonoBehaviour
         {
             if (nums[0] == 1 && nums[1] == 9 && nums[2] == 8 && nums[3] == 4)
             {
+                onOpenDoor?.Invoke(); 
                 print("correcte");
             }
             else
