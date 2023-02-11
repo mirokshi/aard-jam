@@ -34,9 +34,16 @@ public class paswordControl : MonoBehaviour
             {
                 print("incorrecte");
             }
-
+            borrar();
             num = 0;
         }
     }
-    
+
+    private void borrar()
+    {
+        for (int i = 0; i < nums.Length; i++)
+        {
+            nums[i] = 0;
+        }
+    }
 }
