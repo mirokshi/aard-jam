@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class CountDownTimer : MonoBehaviour
 {
@@ -14,10 +15,13 @@ public class CountDownTimer : MonoBehaviour
 
     [SerializeField] private AudioSource _audioSource;
 
+    [SerializeField] private VideoPlayer _videoPlayer;
+
     private void Start()
     {
         timer = timerDuration;
         _audioSource.enabled = false;
+        _videoPlayer.enabled = false;
     }
 
     private void FixedUpdate()
@@ -36,6 +40,7 @@ public class CountDownTimer : MonoBehaviour
     IEnumerator clock()
     {
         _audioSource.enabled = true;
+        _videoPlayer.enabled = true;
         yield return new WaitForSeconds(5.5f);
         SceneManager.LoadScene("Scenes/SampleScene");
     }
