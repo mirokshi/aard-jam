@@ -7,8 +7,15 @@ using UnityEngine;
 public class textCarta : MonoBehaviour
 {
     [SerializeField] private GameObject text;
+
+    private void Awake()
+    {
+        text.SetActive(false);
+    }
+
     private void OnMouseDown()
     {
+        print("text");
         text.SetActive(true);
     }
 
