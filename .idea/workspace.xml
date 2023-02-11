@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a3994-63ee-4fbd-bd70-2cb9980c3def" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/puzzle libreria/paswordControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/puzzle libreria/paswordControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,7 @@
       <workItem from="1676040564043" duration="3000" />
       <workItem from="1676040579483" duration="90000" />
       <workItem from="1676130481909" duration="796000" />
+      <workItem from="1676151060474" duration="122000" />
     </task>
     <servers />
   </component>
