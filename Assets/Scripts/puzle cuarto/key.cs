@@ -15,5 +15,6 @@ public class key : MonoBehaviour
     private void OnMouseDown()
     {
         this.transform.position = new Vector3(0, -10, 0);
+        tengoLaLlave = true;
     }
 }
