@@ -17,14 +17,15 @@ public class CountDownTimer : MonoBehaviour
     private void Start()
     {
         timer = timerDuration;
+        _audioSource.mute = true;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (timer > 0)
         {
-            timer -= Time.deltaTime;
-            minuteArrow.transform.localRotation = Quaternion.Euler(0f, 0f, timer * -6f + 40);
+            timer -= Time.fixedDeltaTime;
+            minuteArrow.transform.localRotation = Quaternion.Euler(0f, 0f, timer * -3f + 40);
         }
         else
         {
@@ -34,7 +35,7 @@ public class CountDownTimer : MonoBehaviour
 
     IEnumerator clock()
     {
-        _audioSource.enabled = true;
+        _audioSource.mute = false;
         yield return new WaitForSeconds(5.5f);
         SceneManager.LoadScene("Scenes/SampleScene");
     }
