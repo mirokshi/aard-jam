@@ -17,7 +17,7 @@ public class CountDownTimer : MonoBehaviour
     private void Start()
     {
         timer = timerDuration;
-        _audioSource.mute = true;
+        _audioSource.enabled = false;
     }
 
     private void FixedUpdate()
@@ -35,7 +35,7 @@ public class CountDownTimer : MonoBehaviour
 
     IEnumerator clock()
     {
-        _audioSource.mute = false;
+        _audioSource.enabled = true;
         yield return new WaitForSeconds(5.5f);
         SceneManager.LoadScene("Scenes/SampleScene");
     }
