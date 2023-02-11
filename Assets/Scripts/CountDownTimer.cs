@@ -24,7 +24,7 @@ public class CountDownTimer : MonoBehaviour
         if (timer > 0)
         {
             timer -= Time.deltaTime;
-            minuteArrow.transform.localRotation = Quaternion.Euler(0f, 0f, timer * 6f + 40);
+            minuteArrow.transform.localRotation = Quaternion.Euler(0f, 0f, timer * -6f + 40);
         }
         else
         {
