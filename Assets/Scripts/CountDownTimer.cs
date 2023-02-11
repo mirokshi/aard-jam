@@ -17,14 +17,15 @@ public class CountDownTimer : MonoBehaviour
     private void Start()
     {
         timer = timerDuration;
+        _audioSource.enabled = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (timer > 0)
         {
-            timer -= Time.deltaTime;
-            minuteArrow.transform.localRotation = Quaternion.Euler(0f, 0f, timer * 6f + 40);
+            timer -= Time.fixedDeltaTime;
+            minuteArrow.transform.localRotation = Quaternion.Euler(0f, 0f, timer * -3f + 40);
         }
         else
         {
