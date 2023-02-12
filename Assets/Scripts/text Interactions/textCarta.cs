@@ -16,11 +16,13 @@ public class textCarta : MonoBehaviour
     private void OnMouseDown()
     {
         print("text");
+        Time.timeScale = 0;
         text.SetActive(true);
     }
 
     private void OnMouseExit()
     {
         text.SetActive(false);
+        Time.timeScale = 1;
     }
 }
