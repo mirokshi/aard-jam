@@ -9,7 +9,10 @@ public class FirstPersonMovement : MonoBehaviour
     bool PauseCheck= false;
     public AudioSource footsteps;
 
-
+    private void Awake()
+    {
+        PauseCheck = false;
+    }
     void FixedUpdate()
     {
         velocity.y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
