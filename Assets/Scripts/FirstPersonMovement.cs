@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FirstPersonMovement : MonoBehaviour
 {
@@ -40,6 +41,17 @@ public class FirstPersonMovement : MonoBehaviour
             PauseMenu.SetActive(false);
             Time.timeScale = 1;
             PauseCheck = false;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.M) && PauseCheck == true)
+        {
+            SceneManager.LoadScene("Scenes/MainMenu");
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Space) && PauseCheck == true)
+        {
+            Debug.Log("Exit");
+            Application.Quit();
         }
     }
 }
