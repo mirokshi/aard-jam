@@ -6,6 +6,7 @@ public class FirstPersonMovement : MonoBehaviour
     Vector2 velocity;
     public GameObject PauseMenu;
     bool PauseCheck= false;
+    public AudioSource footsteps;
 
 
     void FixedUpdate()
@@ -13,20 +14,31 @@ public class FirstPersonMovement : MonoBehaviour
         velocity.y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         velocity.x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         transform.Translate(velocity.x, 0, velocity.y);
-        
+
     }
 
     private void Update()
     {
+        if (new Vector2(velocity.x,velocity.y).normalized != Vector2.zero)
+        {
+            footsteps.enabled = true;
+        }
+        else
+        {
+            footsteps.enabled = false;
+        }
+        
         if (Input.GetKeyDown(KeyCode.Escape) && PauseCheck == false)
         {
             Debug.Log("Funciona");
             PauseMenu.SetActive(true);
+            Time.timeScale = 0;
             PauseCheck = true;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && PauseCheck == true)
         {
             PauseMenu.SetActive(false);
+            Time.timeScale = 1;
             PauseCheck = false;
         }
     }
