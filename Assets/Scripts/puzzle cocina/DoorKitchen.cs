@@ -8,9 +8,11 @@ public class DoorKitchen : MonoBehaviour
     private bool _fork;
     private bool _knife;
     private bool _spoon;
+    private AudioSource _audioSource;
     
     private void OnEnable()
     {
+        _audioSource = GetComponent<AudioSource>();
         _fork = false;
         _knife = false;
         _spoon = false;
@@ -26,39 +28,38 @@ public class DoorKitchen : MonoBehaviour
 
     void NotResolved(CutleryControl cutlery)
     {
-        Debug.Log("EXIT");
-        if (cutlery.CutleryName == "fork")
+        switch (cutlery.CutleryName)
         {
-            _fork = false;
-        }
-        if (cutlery.CutleryName == "knife")
-        {
-            _knife = false;
-        }
-        if (cutlery.CutleryName == "spoon")
-        {
-            _spoon = false;
+            case "fork":
+                _fork = false;
+                break;
+            case "knife":
+                _knife = false;
+                break;
+            case "spoon":
+                _spoon = false;
+                break;
         }
     }
     
     void Resolved(CutleryControl cutlery)
     {
-        Debug.Log("ENTER");
-        if (cutlery.CutleryName == "fork")
+        switch (cutlery.CutleryName)
         {
-            _fork = true;
-        }
-        if (cutlery.CutleryName == "knife")
-        {
-            _knife = true;
-        }
-        if (cutlery.CutleryName == "spoon")
-        {
-            _spoon = true;
+            case "fork":
+                _fork = true;
+                break;
+            case "knife":
+                _knife = true;
+                break;
+            case "spoon":
+                _spoon = true;
+                break;
         }
 
         if (_fork && _knife && _spoon)
         {
+            _audioSource.Play();
             transform.Rotate(new Vector3(0,90f,0));
             Debug.Log("RESUELTO");    
         }
