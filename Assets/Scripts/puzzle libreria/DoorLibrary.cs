@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class DoorLibrary : MonoBehaviour
 {
+    private bool fet;
     private void OnEnable()
     {
         paswordControl.onOpenDoor += OpenDoor;
+        fet = false;
     }
 
     private void OnDisable()
@@ -15,7 +17,12 @@ public class DoorLibrary : MonoBehaviour
         paswordControl.onOpenDoor -= OpenDoor;
     }
 
-    void OpenDoor(){
-        transform.Rotate(new Vector3(0,90f,0));
+    void OpenDoor()
+    {
+        if (!fet)
+        {
+            fet = true;
+            transform.Rotate(new Vector3(0,90f,0));
+        }
     }
 }

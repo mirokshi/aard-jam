@@ -6,6 +6,7 @@ using UnityEngine;
 public class paswordControl : MonoBehaviour
 {
     public static Action onOpenDoor;
+    public static Action onCloseDoor;
     private int num = 0;
     private int[] nums = new int [4];
     private void OnEnable()
@@ -32,6 +33,7 @@ public class paswordControl : MonoBehaviour
             }
             else
             {
+                onCloseDoor?.Invoke();
                 print("incorrecte");
             }
             borrar();
