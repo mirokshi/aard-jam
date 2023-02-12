@@ -5,11 +5,9 @@ using System;
 
 public class DeteckClick : MonoBehaviour
 {
-    public static Action <DeteckClick> buttonCliked;
-    [SerializeField] public string value ;
     
     private void OnMouseDown()
     {
-        buttonCliked?.Invoke(this);
+        transform.Rotate(new Vector3(0,30f,0));
     }
 }
