@@ -6,10 +6,25 @@ using UnityEngine;
 public class CutleryControl : MonoBehaviour
 {
     public static Action<CutleryControl> onResolved;
-    [SerializeField] public string Cutlery;
+    public static Action<CutleryControl> onNotResolved;
+    [SerializeField] public string CutleryName;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider)
     {
-        onResolved?.Invoke(this);
+        if (collider.CompareTag("Dish"))
+        {
+            onResolved?.Invoke(this);    
+        }
+        
     }
+    
+    private void OnTriggerExit(Collider collider)
+    {
+        if (collider.CompareTag("Dish"))
+        {
+            onNotResolved?.Invoke(this);    
+        }
+        
+    }
+    
 }
