@@ -31,18 +31,20 @@ public class openLights : MonoBehaviour
         {
             colorLuz.material.SetColor("_Color", Color.yellow);
         }
-        
+
+        if (llumsObertes == 4)
+        {
+            llumsObertes = 0;
+        }
     }
 
     private void llumVerd()
     {
-        llumsObertes = 0;
         colorLuz.material.SetColor("_Color", Color.green);
     }
 
     private void llumVermella()
     {
-        llumsObertes = 0;
         colorLuz.material.SetColor("_Color", Color.red);
     }
 }
